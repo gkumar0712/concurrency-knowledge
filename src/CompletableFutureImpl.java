@@ -33,12 +33,7 @@ public class CompletableFutureImpl {
                         paymentResult
         );
         System.out.println(finalResult.join());
-        CompletableFuture.allOf(
-                customer,
-                inventory,
-                payment
-        );
-
+        
         
 long end = System.currentTimeMillis();
 
